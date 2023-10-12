@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grover</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+</head>
+
+<body>
+    <!-- !HEADER -->
+
+    <header id="header">
+        <nav class="navbar container">
+            <a href="./index.html" class="logo">
+                <img src="./assets/images/grover_logo.svg" alt="Grover's logo" class="logo-image">
+            </a>
+            <button type="button" class="menu-toggler">
+                <i class="ri-menu-line toggle-icon open-menu-icon"></i>
+                <i class="ri-close-line toggle-icon close-menu-icon"></i>
+            </button>
+            <div class="collapsible-menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#hero-section" class="list-link current-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#about-section" class="list-link">About Us</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#services-section" class="list-link">Services</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!-- <div class="search-box">
+                    <form action="" class="search-form">
+                        <span class="form-icon search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                viewbox="0 0 16 16">
+                                <path fill="#8B8B8B"
+                                    d="M15.212 14.573l-3.808-3.96A6.44 6.44 0 0012.92 6.46 6.467 6.467 0 006.46 0 6.467 6.467 0 000 6.46a6.467 6.467 0 006.46 6.46 6.39 6.39    0 003.701-1.169l3.837 3.99a.838.838 0 001.191.023.844.844 0 00.023-1.19zM6.46 1.685a4.78 4.78 0 014.775 4.775 4.78 4.78 0 01-4.775 4.  775A4.78 4.78 0 011.685 6.46 4.78 4.78 0 016.46 1.685z" />
+                            </svg>
+
+                        </span>
+                        <input type="text" class="search-input" placeholder="Search">
+                        <button type="button" class="form-icon cart-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewbox="0 0 24 24">
+                                <path class="path" fill="#3C3737" fill-rule="evenodd"
+                                    d="M1.014 10.084a.464.464 0 01.45-.576h21.072c.302 0 .523.283.45.576L20.059 21.79a.927.927 0 01-.9.703H4.84a.927.927 0 01-.9-.703L1.015 10.084zm11.736 3.541a.75.75 0 00-1.5 0v4.75a.75.75 0 001.5 0v-4.75zm4.319-.561a.75.75 0 01.448.961l-1.624 4.464a.75.75 0 11-1.41-.513l1.625-4.464a.75.75 0 01.96-.448zm-9.177.448a.75.75 0 10-1.41.513l1.625 4.464a.75.75 0 101.41-.513l-1.625-4.464z"
+                                    clip-rule="evenodd" />
+                                <path class="path no-fill" stroke="#3C3737" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M18.5 10.5l-4.911-6.422a2 2 0 00-3.178 0L5.5 10.5" />
+                            </svg>
+                        </button>
+                    </form>
+                </div> -->
+            </div>
+        </nav>
+    </header>
+    <!-- !HERO -->
+    <section class="hero" id="hero-section">
+        <div class="hero-container container d-grid">
+            <div class="text-content-group">
+                <div class="tagline-wrapper">
+                    <h3 class="tagline">Moving soon</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11 15V17H13V15H11ZM13 13.3551C14.4457 12.9248 15.5 11.5855 15.5 10C15.5 8.067 13.933 6.5 12 6.5C10.302 6.5 8.88637 7.70919 8.56731 9.31346L10.5288 9.70577C10.6656 9.01823 11.2723 8.5 12 8.5C12.8284 8.5 13.5 9.17157 13.5 10C13.5 10.8284 12.8284 11.5 12 11.5C11.4477 11.5 11 11.9477 11 12.5V14H13V13.3551Z">
+                        </path>
+                    </svg>
+                </div>
+                <h1 class="title main-title">
+                    You like to move it? <span class="accent-color">We are ready to move it</span>
+                </h1>
+                <p class="text-content-paragraph">Experience a seamless and stress-free move with our trusted movers. We
+                    handle every step of your relocation journey, so you can focus on settling into your new home.
+                </p>
+                <div class="button-group">
+                    <a href="#" class="button button-normal">Move now</a>
+                    <button class="button button-transparent">
+                        <img src="./assets/images/button-play.svg" alt="Play button" class="play-icon-image">
+                        Moving process
+                    </button>
+                </div>
+            </div>
+
+            <div class="image-content-group">
+                <img src="./assets/images/hero_image.png" alt="Chef holding up veges and fruit">
+            </div>
+        </div>
+    </section>
+
+    <!-- STEPS-->
+    <section class="what-we-serve ">
+        <div class="container">
+            <div class="section-metadata">
+                <span class="section-tagline">Get started with us</span>
+                <h2 class="title section-title">Start your moving journey with us</h2>
+            </div>
+
+            <div class="card-group d-grid">
+                <div class="card">
+                    <header class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M14 1.5V22H12V3.704L7.5 4.91V2.839L12.5 1.5H14Z" fill="rgba(245,85,86,1)"></path>
+                        </svg>
+                    </header>
+                    <div class="card-body">
+                        <h3 class="title card-title">Contact us</h3>
+                        <p>Get in touch with our team to initiate the process. You can reach us via phone, email, or our
+                            website contact form. Provide essential details, such as your moving date and the locations
+                            involved.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M16.0002 7.5C16.0002 5.29086 14.2094 3.5 12.0002 3.5C9.7911 3.5 8.00024 5.29086 8.00024 7.5H6.00024C6.00024 4.18629 8.68653 1.5 12.0002 1.5C15.314 1.5 18.0002 4.18629 18.0002 7.5C18.0002 8.93092 17.4993 10.2448 16.6633 11.276L9.344 19.9991L18.0002 20V22H6.00024L6 20.8731L15.0642 10.071C15.6485 9.37595 16.0002 8.47905 16.0002 7.5Z"
+                                fill="rgba(245,85,86,1)"></path>
+                        </svg>
+                    </header>
+                    <div class="card-body">
+                        <h3 class="title card-title">Schedule a consultation</h3>
+                        <p>We'll schedule a physical or virtual consultation to assess your specific needs. During this
+                            meeting, we'll
+                            discuss the scope of your move, any specialized items, packing requirements, and other
+                            details that are crucial to planning a successful move.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <header class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M18.0005 2V3.36217L12.8092 9.54981C16.0174 9.94792 18.5005 12.684 18.5005 16C18.5005 19.5899 15.5904 22.5 12.0005 22.5C8.95483 22.5 6.39837 20.4052 5.69336 17.5778L7.634 17.0922C8.12205 19.0497 9.89193 20.5 12.0005 20.5C14.4858 20.5 16.5005 18.4853 16.5005 16C16.5005 13.5147 14.4858 11.5 12.0005 11.5C11.28 11.5 10.599 11.6694 9.99514 11.9705L9.76741 12.0923L9.07754 10.8852L14.8555 3.99917L6.50054 4V2H18.0005Z"
+                                fill="rgba(245,85,86,1)"></path>
+                        </svg>
+                    </header>
+                    <div class="card-body">
+                        <h3 class="title card-title">Receice a customized quote</h3>
+                        <p>After the consultation, we'll provide you with a customized moving plan and a transparent,
+                            detailed quote. This will include an overview of the services you'll receive and the
+                            estimated cost.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M16.0001 1.5L16 16H19.0001V18H16L16.0001 22H14.0001L14 18H4V16.898L14.0001 1.5H16.0001ZM14 16V5.171L6.968 16H14Z"
+                                fill="rgba(245,85,86,1)"></path>
+                        </svg>
+                    </header>
+                    <div class="card-body">
+                        <h3 class="title card-title">Confirmation & preparations</h3>
+                        <p>Once you're satisfied with the plan and quote, confirm your move with us. We'll then guide
+                            you through the next steps, including packing preparations, and provide any additional
+                            assistance you may need to ensure a smooth moving experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- !About SEction -->
+    <section class="home-delivery" id="about-section">
+        <div class="home-delivery-container container d-grid">
+            <div class="image-content-group">
+                <img src="./assets/images/feat2.png" alt="">
+            </div>
+            <div class="text-content-group">
+                <div class="section-metadata">
+                    <span class="section-tagline">About Us</span>
+                    <!-- <h2 class="title section-title">Sit at home, we will take care of your order</h2> -->
+                    <p>At Mwas Movers & Logistics, we're more than just a moving company; we're your trusted partner in
+                        making your relocation experience smooth and stress-free. With over 20 years of expertise in the
+                        moving industry, we have established ourselves as a reliable choice for individuals and
+                        businesses looking to move locally or across long distances.
+                    </p>
+                    <span class="section-tagline mission">Our Mission</span>
+                    <p>
+                        Our mission is to provide the highest level of customer satisfaction by delivering efficient,
+                        dependable, and cost-effective moving services. We're dedicated to making your move a positive
+                        and memorable experience.
+                    </p>
+                </div>
+                <a href="#" class="button button-about">Move now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- !WHAT WE OFFER-->
+    <section class="what-we-serve " id="services-section">
+        <div class="container">
+            <div class="section-metadata">
+                <span class="section-tagline">What we offer</span>
+                <h2 class="title section-title">Moving a house or Relocating an office? We got you...</h2>
+            </div>
+
+            <div class="card-group d-grid">
+                <div class="card">
+                    <header class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M17 8H20L23 12.0557V18H20.9646C20.7219 19.6961 19.2632 21 17.5 21C15.7368 21 14.2781 19.6961 14.0354 18H8.96456C8.72194 19.6961 7.26324 21 5.5 21C3.73676 21 2.27806 19.6961 2.03544 18H1V6C1 5.44772 1.44772 5 2 5H16C16.5523 5 17 5.44772 17 6V8ZM17 10V13H21V12.715L18.9917 10H17Z"
+                                fill="rgba(245,85,86,1)"></path>
+                        </svg>
+                    </header>
+                    <div class="card-body">
+                        <h3 class="title card-title">Local & Long distance moves</h3>
+                        <p>Whether you're moving across town or across the country, our experienced movers are here to
+                            make your journey smooth. We handle all the logistics, from packing to unloading, ensuring a
+                            stress-free transition to your new location.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M20.5021 5.92225 12 1 3.49793 5.92225 12 10.8445 20.5021 5.92225ZM2.5 7.6555V17.5L11 22.4211V12.5765L2.5 7.6555ZM13 22.4211 21.5 17.5V7.6555L13 12.5765V22.4211Z"
+                                fill="rgba(245,85,86,1)"></path>
+                        </svg>
+                    </header>
+                    <div class="card-body">
+                        <h3 class="title card-title">Packing & Unpacking services</h3>
+                        <p>Leave the time-consuming task of packing and unpacking to us. Our expert team will carefully
+                            and efficiently pack your belongings, ensuring they arrive safely at your new destination.
+                            We'll also assist in unpacking, so you can quickly settle into your new space.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <header class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M14.1213 10.4796C13.7308 10.0891 13.0976 10.0891 12.7071 10.4796L12 11.1868C11.2189 11.9678 9.95259 11.9678 9.17154 11.1868C8.39049 10.4057 8.39049 9.13937 9.17154 8.35832L14.8022 2.72617C16.9061 2.25022 19.2008 2.83124 20.8388 4.46924C23.2582 6.8886 23.3716 10.7407 21.1792 13.2944L19.071 15.4294L14.1213 10.4796ZM3.16113 4.46924C5.33452 2.29584 8.66411 1.98332 11.17 3.53165L7.75732 6.94411C6.19523 8.50621 6.19523 11.0389 7.75732 12.601C9.27209 14.1157 11.6995 14.1616 13.2695 12.7387L13.4142 12.601L17.6568 16.8436L13.4142 21.0862C12.6331 21.8673 11.3668 21.8673 10.5858 21.0862L3.16113 13.6616C0.622722 11.1232 0.622722 7.00764 3.16113 4.46924Z"
+                                fill="rgba(245,85,86,1)"></path>
+                        </svg>
+                    </header>
+                    <div class="card-body">
+                        <h3 class="title card-title">Commercial services</h3>
+                        <p>We specialize in catering to businesses and organizations, offering a range of commercial
+                            services. Whether you're relocating your office, warehouse, retail space, or need assistance
+                            with corporate employee relocations, our experienced team ensures a smooth and efficient
+                            transition.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 19.0003H14V6.00028L20.3939 8.74053C20.7616 8.89811 21 9.25964 21 9.65967V19.0003H23V21.0003H1V19.0003H3V5.65015C3 5.25496 3.23273 4.89684 3.59386 4.73634L11.2969 1.31275C11.5493 1.2006 11.8448 1.31424 11.9569 1.56659C11.9853 1.63052 12 1.6997 12 1.76966V19.0003Z"
+                                fill="rgba(245,85,86,1)"></path>
+                        </svg>
+                    </header>
+                    <div class="card-body">
+                        <h3 class="title card-title">Construction material delivery</h3>
+                        <!-- <p>Need a secure place to store your belongings during a transition? We offer flexible and
+                            secure storage solutions. Our climate-controlled facilities provide a safe environment for
+                            your items, whether it's short-term storage during your move or long-term storage for your
+                            extra belongings.</p> -->
+
+                        <ul>
+                            <li>Ballast</li>
+                            <li>Rock Sand</li>
+                            <li>Hardcore</li>
+                            <li>Red Soil</li>
+                            <li>Marrum</li>
+                            <li>Darugo Stone</li>
+                            <li>Machine cut Stones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- !WHY CHOOSE US -->
+    <section class="why-choose-us">
+        <div class="why-choose-us-container container d-grid">
+            <div class="image-content-group">
+                <img src="./assets/images/feat.png" alt="">
+            </div>
+            <div class="text-content-group">
+                <div class="section-metadata">
+                    <span class="section-tagline">Why choose us</span>
+                    <h2 class="title section-title">We keep our promise</h2>
+                    <ol>
+                        <li><b>Budget Friendly:</b> We offer competitive pricing without compromising on the quality of
+                            our services.</li>
+                        <li><b>Reliability:</b> You can trust us to handle your belongings with care. We treat your
+                            items as if they were our own.</li>
+                        <li><b>Offer Insurance:</b> Your peace of mind is important to us. We offer insurance options to
+                            ensure your valuable possessions are protected during the move.</li>
+                        <li><b>On-Time Delivery:</b> We understand the importance of time, and our commitment to on-time
+                            delivery means you can plan your move with confidence.</li>
+                    </ol>
+
+                </div>
+                <a href="#" class="button button-choose">Move now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- !DOWNLOAD OUR APP -->
+    <!-- <section class="download-our-app">
+        <div class="download-our-app-container container d-grid">
+            <div class="image-content-group">
+                <img src="./assets/images/phone_app_image.svg" alt="Phone app">
+            </div>
+            <div class="text-content-group">
+                <div class="section-metadata">
+                    <span class="section-tagline">Download our app</span>
+                    <h2 class="title section-title">Get the groceries app to easily order</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet corporis in asperiores
+                        reiciendis debitis quas nisi, veritatis distinctio vero necessitatibus,
+                    </p>
+                </div>
+                <div class="button-group">
+                    <a href="#" class="button button-transparent">
+                        <img src="./assets/images/apple_store.svg" alt="App store logo">
+                        App store
+                    </a>
+                    <a href="#" class="button button-transparent">
+                        <img src="./assets/images/play_store.svg" alt="Play store logo">
+                        Play store
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- REquest modal -->
+    <div class="modal" id="moveNowModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Request Your Move</h2>
+            <form id="moveNowForm">
+                <label for="name">Your name::</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" placeholder="optional">
+
+                <label for="location">Current Location:</label>
+                <input type="text" id="location" name="location" placeholder="eg. Ruiru" required>
+
+                <label for="city">Current City/Town:</label>
+                <!-- <input type="text" id="city" name="city" required> -->
+                <select id="city" name="city" required>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Kiambu">Kiambu</option>
+                    <option value="Machakos">Machakos</option>
+                    <option value="Nakuru">Nakuru</option>
+                    <option value="Kisumu">Kisumu</option>
+                    <option value="Mombasa">Mombasa</option>
+                    <option value="Nyeri">Nyeri</option>
+                    <option value="Kajiado">Kajiado</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="otherCity" id="otherCityLabel" style="display: none;">Other City/Town:</label>
+                <input type="text" id="otherCity" name="otherCity" style="display: none;"
+                    placeholder="If you chose other city/town, specify here.">
+
+
+                <label for="address">Current Address:</label>
+                <input type="text" id="address" name="address" placeholder="Street address" required>
+                <input type="text" id="address2" name="address2"
+                    placeholder="Building, Apt, Floor, Suite, etc. (optional)">
+
+                <label for="phone">Your Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="services">Services Required:</label>
+                <!-- <input type="text" id="services" name="services" required> -->
+                <select id="services" name="services" required>
+                    <option value="service-1">House Moving</option>
+                    <option value="service-2">Office Relocation</option>
+                    <option value="service-3">Packing & Unpacking</option>
+                    <option value="service-4">Commercial Services</option>
+                    <option value="service-5">Long distance moving</option>
+                    <option value="service-6">Other</option>
+                </select>
+
+                <button type="submit" class="button button-normal">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- !FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top-data d-grid">
+                <div class="company-data">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/grover_logo.svg" alt="Grover's logo" class="logo-image">
+                    </a>
+                    <p class="company-description">
+                        The fastest grocery delivery services. We are available all over the world with multiple offices
+                        in over 100 cities
+                    </p>
+                </div>
+
+                <div class="footer-group">
+                    <h6 class="title footer-title">Company</h6>
+                    <ul class="list">
+                        <li class="list-item">
+                            <a href="#" class="list-link">Home</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">About us</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Services</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-group">
+                    <h6 class="title footer-title">Services</h6>
+                    <ul class="list">
+                        <li class="list-item">
+                            <a href="#" class="list-link">House moving</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Office relocation</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Packing & Unpacking</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Commercial services</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Long distance moving</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-group">
+                    <h6 class="title footer-title">Get in touch</h6>
+                    <ul class="list">
+                        <li class="list-item">
+                            <a href="#" class="list-link">Kiambu, Githunguri</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">rufusmwangi6@gmail.com</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">+254799302758</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">+254705127144</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="horizontal-line">
+
+            <div class="footer-bottom-data">
+                <span class="copyright-information">&copy;MWAS 2023. All Rights Reserverd</span>
+                <div class="legal-information">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/modal.js"></script>
+</body>
+
+</html>
